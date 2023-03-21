@@ -4,5 +4,6 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello world!")
-	panic("runtime error")
+	// panic("runtime error")
+	
 }
