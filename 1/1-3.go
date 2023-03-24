@@ -11,12 +11,16 @@ type User struct {
 	Age  int
 }
 
-func main() {
+func (u *User) SetName(name string) {
+	u.Name = name
+}
 
+func main() {
+	
 	t := T{User: User{Name: "Ryu"}}
 	fmt.Println(t)
 	fmt.Println(t.User)
 	fmt.Println(t.User.Name)
 	// fmt.Println(t.Name)
-
+	t.User.SetName("Ko")
 }
