@@ -32,7 +32,7 @@ func main() {
 	fmt.Println(string(bs))
 
 	u2 := new(User)
-	if err := json.Unmarshal(bs, &u2); err != nil {
+	if err := json.Unmarshal(bs, u2); err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println(*u2)
